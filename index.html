@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MELLOMIX</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <div class="popup-balao-central" id="popupBalao">
+        <div class="popup-conteudo">
+          <span class="popup-fechar" id="fecharPopup">&times;</span>
+          <p>Seja bem-vindo à MelloMix! 😊</p>
+          <div class="popup-botoes">
+            <a href="https://seusite.com" class="popup-btn primario">Já sou cliente</a>
+            <a href="#conhecer" class="popup-btn secundario">Quero conhecer</a>
+          </div>
+        </div>
+      </div>
+      
+      
+
+     <!--Whatssap canto-->
+    <a href="https://wa.me/55SEUNUMERO" target="_blank" id="whatsapp-button">
+        <div id="whatsapp-content">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+            <span>Precisa de ajuda?</span>
+        </div>
+    </a>
+     <!--Fim do Whatssap canto-->
+
+     <!--cabeçalho-->
+    
+    <header class="header">
+        <a href="index.html" class="logo"><span>MELLOMIX</span><br> </a>
+
+        <div id="menu-btn" class="fas fa-bars"></div>
+        
+        <nav class="navbar">
+            <a href="#home">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#features">COMPRE AQUI</a>
+            <a href="#pricing">Preços</a>
+            <a href="#trainers">CATEGORIA</a>
+            <a href="#blogs">blogs</a>
+            <a href="#comprar" class="btn-comprar"><i class="fas fa-shopping-cart"></i> Comprar</a>
+        </nav>
+    </header>
+  
+    <!--Fim cabeçalho-->
+
+    <main>
+        <section id="home" class="home">
+            <div class="swiper home-slider">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide slide" style="background: url(img/imag.gif) no-repeat;">
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </section>
+        <!--Fim home-->
+
+        <!--Quem somos-->
+        <section id="about" class="about">
+            <div class="image">
+                <!-- Vídeo com botão de áudio -->
+                <video id="about-video" autoplay loop>
+                    <source src="video/intro.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos.
+                </video>
+                <button id="audio-toggle" class="audio-toggle">🔊</button>
+            </div>
+        
+            <div class="content">
+                <span>Quem Somos</span>
+                <h3 class="title">MelloMix</h3>
+                <p>
+                    Na MelloMix, nossa missão é oferecer aos nossos clientes uma experiência de compra simples, segura e repleta de confiança.
+                    Trabalhamos com os melhores fornecedores para garantir produtos de alta qualidade a preços justos. 
+                    Com uma navegação fácil e um processo de compra 100% online, queremos tornar sua jornada de compra tranquila e satisfatória.
+                    <strong>Você compra com segurança, recebe o produto rapidamente e com o atendimento que você merece.</strong>
+                </p>
+        
+                <div class="box-container">
+                    <div class="box">
+                        <h3><i class="fas fa-check"></i>Segurança em Cada Passo</h3>
+                        <p>Compra 100% segura com criptografia e pagamento protegido.</p>
+                    </div>
+        
+                    <div class="box">
+                        <h3><i class="fas fa-check"></i>Entrega Rápida</h3>
+                        <p>Receba seu produto rapidamente, com rastreamento transparente.</p>
+                    </div>
+        
+                    <div class="box">
+                        <h3><i class="fas fa-check"></i>Suporte Dedicado</h3>
+                        <p>Nosso time está sempre disponível para garantir sua satisfação.</p>
+                    </div>
+        
+                    <div class="box">
+                        <h3><i class="fas fa-check"></i>Variedade de Produtos</h3>
+                        <p>De tecnologia a saúde, temos tudo o que você precisa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+   <!-- Fim deQuem somos-->
+
+        <!-- loja-->
+
+        <section id="buy-now" class="buy-now">
+            <div class="buy-now-container">
+                <div class="text-content">
+                    <h2 class="title">Compre Agora e Aproveite Ofertas Exclusivas</h2>
+                    <p class="description">Oferecemos os melhores produtos, com qualidade garantida e uma experiência de compra 100% segura. Compre com facilidade e receba o que você deseja com toda a confiança.</p>
+                    <p class="offer-text"><strong>Ofertas limitadas! Não perca a chance de garantir os melhores preços.</strong></p>
+                    
+                    <div class="cta-buttons">
+                        <a href="#produtos" class="btn-main">Compre no site</a>
+                        <a href="#compre-agora" class="btn-secundary">Compre WhatsApp</a>
+                    </div>
+                </div>
+        
+                <div class="image-content">
+                    <div class="image-wrapper">
+                        <img src="img/magazine.jpg" alt="Imagem do Produto" />
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+        
+        
+        
+<!--Fim serviços-->
+
+<section id="pricing" class="pricing">
+    <div class="information">
+        <span>Como Funciona?</span>
+        <h3>Simples, Rápido e Seguro</h3>
+        <p>Entenda como funciona o processo de compra através dos nossos parceiros e como garantimos a sua segurança e confiança.</p>
+        <ul>
+            <li><i class="fas fa-check"></i> Compra diretamente no site do Magalu, com pagamento seguro.</li>
+            <li><i class="fas fa-check"></i> Todos os produtos são cadastrados no Parceiro Magalu.</li>
+            <li><i class="fas fa-check"></i> Após a aprovação do pagamento, o envio é preparado imediatamente.</li>
+            <li><i class="fas fa-check"></i> Entrega rápida e acompanhamento do pedido diretamente no site.</li>
+        </ul>
+        <a href="https://www.youtube.com/watch?v=rOim8f4o2kU" class="btn">Assista ao vídeo explicativo</a>
+    </div>
+
+    <div class="plan basic">
+        <h3>É seguro comprar?</h3>
+        <div class="price"><span>Sim! </span>100<span>%</span></div>
+        <div class="list">
+            <p><i class="fas fa-check"></i> Se houver problemas, o dinheiro é devolvido com total segurança.</p>
+            <p><i class="fas fa-check"></i> O pedido é feito diretamente no site oficial do Magalu.</p>
+            <p><i class="fas fa-check"></i> Entrega garantida e transparente.</p>
+            <p><i class="fas fa-check"></i> Suporte tanto do Magalu quanto do nosso time, pronto para ajudar.</p>
+            <p><i class="fas fa-check"></i> Tudo com total confiança e segurança.</p>
+        </div>
+        <a href="https://www.youtube.com/watch?v=7pGjrsjK7G0" class="btn">Assista ao vídeo de confiança</a>
+    </div>
+
+    <div class="plan">
+        <h3>Confiança em primeiro lugar</h3>
+        <div class="price"><span>Nossa prioridade é você</span></div>
+        <div class="list">
+            <p><i class="fas fa-check"></i> Produtos 100% originais, com garantia de qualidade.</p>
+            <p><i class="fas fa-check"></i> Política de devolução fácil e sem complicação.</p>
+            <p><i class="fas fa-check"></i> Acompanhe o status do seu pedido no site.</p>
+            <p><i class="fas fa-check"></i> Garantia de entrega no prazo combinado.</p>
+            <p><i class="fas fa-check"></i> Todos os produtos possuem garantia oficial.</p>
+        </div>
+        <a href="https://www.idinheiro.com.br/negocios/magazine-voce-e-confiavel/" class="btn">Saiba mais sobre a confiança do Magalu</a>
+    </div>
+</section>
+
+        <!--informativo-->
+
+        <section id="trainers" class="trainers">
+            <h1 class="heading"> <span>O que você encontrará em nossa loja</span> </h1>
+            <div class="box-container">
+        
+                <div class="box">
+                    <img src="img/celular.jpg" alt="Smartphone">
+                    <div class="content">
+                        <span>Smartphones</span>
+                        <h3>Encontre o smartphone ideal para você, com as melhores ofertas.</h3>
+                        <a href="#" class="btn">Ver Mais</a>
+                    </div>
+                </div>
+                
+                <div class="box">
+                    <img src="img/roupa.jpeg" alt="Roupa">
+                    <div class="content">
+                        <span>Roupas</span>
+                        <h3>Moda de qualidade para todos os gostos e estilos.</h3>
+                        <a href="#" class="btn">Ver Mais</a>
+                    </div>
+                </div>
+        
+                <div class="box">
+                    <img src="img/Remedio.jpg" alt="Medicamentos">
+                    <div class="content">
+                        <span>Medicamentos</span>
+                        <h3>Essenciais para a sua saúde, com confiança e segurança.</h3>
+                        <a href="#" class="btn">Ver Mais</a>
+                    </div>
+                </div>
+        
+            </div>
+        </section>
+        
+        
+        <!--Fim treinadores-->
+
+        <section class="banner-suporte">
+            <div class="conteudo-banner">
+                <span><i class="fas fa-headset"></i> Precisa de ajuda?</span>
+                <h3>Fale com nosso time de suporte</h3>
+                <p>Estamos prontos para te atender e tirar todas as dúvidas sobre sua compra. Clique abaixo e fale conosco pelo WhatsApp.</p>
+                <a href="https://wa.me/5562999251063?text=Olá!%20Tenho%20uma%20dúvida%20sobre%20minha%20compra." class="btn-suporte">
+                    <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                </a>
+            </div>
+        </section>
+        
+        <!--Fim banner-->
+
+        <section class="review" id="feedback">
+            <div class="information">
+              <span>Depoimentos Reais</span>
+              <h3>O que nossos clientes dizem</h3>
+              <p>Veja como a experiência de compra com a gente fez a diferença na vida de quem já comprou.</p>
+              <a href="#" class="btn">Ver todos os depoimentos</a>
+            </div>
+          
+            <div class="swiper review-slider">
+              <div class="swiper-wrapper">
+          
+                <div class="swiper-slide slide">
+                  <p>"Chegou muito rápido, bem embalado e com ótimo preço. Recomendo!"</p>
+                  <div class="user">
+                    <img src="https://i.postimg.cc/4xhDF81N/pic-1.png" alt="João Luiz">
+                    <div class="info">
+                      <h3>João Luiz</h3>
+                      <span>Comprou pelo Magalu</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                </div>
+          
+                <div class="swiper-slide slide">
+                  <p>"O melhor atendimento que eu já tive comprando online!"</p>
+                  <div class="user">
+                    <img src="https://i.postimg.cc/ry7XCXSY/pic-2.png" alt="Luana">
+                    <div class="info">
+                      <h3>Luana</h3>
+                      <span>Comprou pelo Magalu</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                </div>
+          
+                <div class="swiper-slide slide">
+                  <p>"É seguro comprar. Amei minhas compras e voltarei em breve."</p>
+                  <div class="user">
+                    <img src="https://i.postimg.cc/7ZxBSmQW/pic-3.png" alt="John Deo">
+                    <div class="info">
+                      <h3>John Deo</h3>
+                      <span>Comprou pela Amazon</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                </div>
+          
+                <div class="swiper-slide slide">
+                  <p>"Produto de qualidade e entrega no prazo. Comprarei de novo!"</p>
+                  <div class="user">
+                    <img src="https://i.postimg.cc/8zjv8vFC/pic-4.png" alt="Alice">
+                    <div class="info">
+                      <h3>Alice</h3>
+                      <span>Comprou na Pague Menos</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                  </div>
+                </div>
+          
+              </div>
+            </div>
+          </section>
+          
+        <!--Fim feedback-->
+
+        <section id="blogs" class="blogs">
+            <h1 class="heading"> <span>Postagens Diárias</span> </h1>
+            <div class="swiper blogs-slider">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide slide">
+                        <div class="image">
+                            <img src="img/poste1.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="link"> <a href="#">por admin</a> <span>|</span> <a href="#">2 Janeiro, 2025</a>
+                            </div>
+                            <h3> Aproveite nossas promoções imperdíveis! Produtos de qualidade com preços que cabem no seu bolso. Não perca essa chance!</h3>
+                            <p>Compre agora e garanta o melhor negócio</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <div class="image">
+                            <img src="img/poste2.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="link"> <a href="#">por admin</a> <span>|</span> <a href="#">12 Janeiro, 2025</a>
+                            </div>
+                            <h3>Planeje suas compras e aproveite nossos descontos exclusivos! Fique de olho nas promoções e garanta os melhores preços.</h3>
+                            <p>Qualidade e economia em um só lugar!</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <div class="image">
+                            <img src="img/poste3.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="link"> <a href="#">por admin</a> <span>|</span> <a href="#">16 Janeiro, 2025</a>
+                            </div>
+                            <h3>Sim, você leu certo! Compre agora e aproveite o frete grátis. </h3>
+                            <p>Corre que é por tempo limitado!</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <div class="image">
+                            <img src="img/poste4.jpeg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="link"> <a href="#">por admin</a> <span>|</span> <a href="#">20 Janeiro, 2025</a>
+                            </div>
+                            <h3>Olha só o que dizem nossos clientes satisfeitos! Sua confiança é nossa prioridade.</h3>
+                            <p>Já comprou com a gente? Conta sua experiência!</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <div class="image">
+                            <img src="img/poste5.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="link"> <a href="#">por admin</a> <span>|</span> <a href="#">22 Janeiro, 2025</a>
+                            </div>
+                            <h3>Os produtos mais desejados estão saindo rápido! 📦 Não perca a chance de garantir o seu antes que acabe.</h3>
+                            <p>Compre agora e receba no conforto da sua casa!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!--Fim blogs-->
+
+    </main>
+
+    <!--Fim conteudo principal-->
+
+    <footer class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Links rápidos</h3>
+                <a class="links" href="#home">Início</a>
+                <a class="links" href="#about">Sobre</a>
+                <a class="links" href="#features">Características</a>
+                <a class="links" href="#pricing">Loja Disponivel</a>
+                <a class="links" href="#trainers">Contatos</a>
+                <a class="links" href="#blogs">blogs</a>
+            </div>
+            <div class="box">
+                <h3>Horário de Funcionamento</h3>
+                <p> Segunda : <i> 7:00 - 22:00 </i> </p>
+                <p> Terça : <i> 7:00 - 22:00 </i> </p>
+                <p> Quarta : <i> 7:00 - 22:00 </i> </p>
+                <p> Quinta : <i> 7:00 - 22:00 </i> </p>
+                <p> Sexta : <i> 7:00 - 22:00 </i> </p>
+                <p> Sábado : <i> 7:00am - 10:30 </i> </p>
+                <p> Domingo : <i> Fechado </i> </p>
+            </div>
+            <div class="box">
+                <h3>Nossos Contatos</h3>
+                <p> <i class="fas fa-phone"></i> 62 992415-3333 </p>
+                <p> <i class="fas fa-envelope"></i> lucasdusis@gmail.com </p>
+                <p> <i class="fas fa-map"></i> Goiania-Goias</p>
+                <div class="share">
+                    <a href="https://www.facebook.com/profile.php?id=61573437011800" class="fab fa-facebook-f"></a>
+                    <a href="https://www.instagram.com/mellomix_varejo?igsh=MTcwNGpyZjV1ZWh1MQ==" class="fab fa-instagram"></a>
+                    <a href="https://www.tiktok.com/@mellomix_varejos?_t=ZM-8vSaT0XJmty&_r=1" class="fab fa-tiktok"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Novidades</h3>
+                <p>Se inscreva para receber as novidades</p>
+                <form action="">
+                    <input type="email" name="" class="email" placeholder="digite seu e-mail" id="">
+                    <input type="submit" value="subscribe" class="btn">
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src='scrip.js'></script>
+</body>
+
+</html>
