@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contato - MelloMix</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo"><span>MELLOMIX</span><br> </a>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+    
+    <nav class="navbar">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="compra.html">Funcionamento</a>
+      <a href="https://sacola.magazinevoce.com.br/#/">Minhas Compras</a>
+      <a href="contato.html">Contato</a>
+        <a href="https://www.magazinevoce.com.br/magazinelucamello/" class="btn-comprar"><i class="fas fa-shopping-cart"></i> Comprar</a>
+    </nav>
+</header>
+
+  <section class="contato">
+    <div class="container">
+      <h2>Entre em contato conosco</h2>
+      <p>Nosso horário de atendimento é de <strong>segunda a sexta-feira, das 09:00h às 18:00h</strong>.</p>
+      <p>Estamos aqui para atender você da melhor forma!</p>
+
+      <div class="contato-info">
+        <div class="box">
+          <h3>Fale conosco</h3>
+          <p><i class="fas fa-phone"></i> <a href="tel:+5500000000000">Ligar para (00) 00000-0000</a></p>
+        </div>
+
+        <div class="box">
+          <h3>Nosso grupo no WhatsApp</h3>
+          <p>Participe do nosso grupo e fique por dentro das novidades!</p>
+          <a href="https://chat.whatsapp.com/SEU-LINK-AQUI" class="btn-whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i> Entrar no Grupo
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="verificar-cep">
+    <div class="container">
+      <h2>Verifique se entregamos na sua região</h2>
+      <p>Digite seu CEP abaixo para verificar cobertura de entrega.</p>
+  
+      <form onsubmit="verificarCEP(event)">
+        <input type="text" id="cep" placeholder="Digite seu CEP" maxlength="9" required>
+        <button type="submit">Verificar</button>
+      </form>
+  
+      <div id="resultado-cep" class="resultado"></div>
+    </div>
+  </section>
+  
+  <script>
+    async function verificarCEP(event) {
+      event.preventDefault();
+      const cep = document.getElementById("cep").value.replace(/\D/g, '');
+      const resultado = document.getElementById("resultado-cep");
+  
+      if (!cep.match(/^[0-9]{8}$/)) {
+        resultado.innerHTML = `<p style="color: red;">❌ CEP inválido. Digite um CEP com 8 números.</p>`;
+        return;
+      }
+  
+      resultado.innerHTML = `⏳ Verificando...`;
+  
+      try {
+        const response = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+        const data = await response.json();
+  
+        if (data.erro) {
+          resultado.innerHTML = `<p style="color: red;">❌ CEP não encontrado.</p>`;
+          return;
+        }
+  
+        const cidade = data.localidade;
+        const estado = data.uf;
+  
+        resultado.innerHTML = `<p style="color: green;"><strong>✅ Entregamos para ${cidade} - ${estado}!</strong></p>`;
+  
+      } catch (error) {
+        resultado.innerHTML = `<p style="color: red;">❌ Erro ao consultar o CEP. Tente novamente.</p>`;
+      }
+    }
+  </script>
+  
+
+  <section class="buscar-magalu">
+    <div class="container">
+      <h2>Encontre lojas Magazine Luiza na sua cidade</h2>
+      <p>Digite o nome da sua cidade e veja os endereços das lojas próximas.</p>
+  
+      <form onsubmit="buscarLojas(event)">
+        <input type="text" id="cidade" placeholder="Digite sua cidade" required>
+        <button type="submit">Buscar</button>
+      </form>
+  
+      <div id="resultado-lojas" class="resultado"></div>
+    </div>
+  </section>
+  
+  <section class="buscar-magalu">
+    <div class="container">
+      <h2>Encontre lojas Magazine Luiza na sua cidade</h2>
+      <p>Digite o nome da sua cidade e veja os endereços das lojas próximas.</p>
+  
+      <form onsubmit="buscarLojas(event)">
+        <input type="text" id="cidade" placeholder="Digite sua cidade" required>
+        <button type="submit">Buscar</button>
+      </form>
+  
+      <div id="resultado-lojas" class="resultado"></div>
+    </div>
+  </section>
+  
+  <section class="buscar-magalu">
+    <div class="container">
+      <h2>Encontre lojas Magazine Luiza na sua cidade</h2>
+      <p>Digite o nome da sua cidade e veja os endereços das lojas próximas.</p>
+  
+      <!-- Barra de pesquisa única -->
+      <form onsubmit="buscarLojas(event)">
+        <input type="text" id="cidade" placeholder="Digite sua cidade" required>
+        <button type="submit">Buscar</button>
+      </form>
+  
+      <!-- Resultado das lojas -->
+      <div id="resultado-lojas" class="resultado"></div>
+    </div>
+  </section>
+  
+
+
+
+<section class="buscar-magalu">
+  <div class="container">
+    <h2>Encontre lojas Magazine Luiza na sua cidade</h2>
+    <p>Digite o nome da sua cidade e veja os endereços das lojas próximas.</p>
+
+    <!-- Barra de pesquisa única -->
+    <form onsubmit="buscarLojas(event)">
+      <input type="text" id="cidade" placeholder="Digite sua cidade" required>
+      <button type="submit">Buscar</button>
+    </form>
+
+    <!-- Resultado das lojas -->
+    <div id="resultado-lojas" class="resultado"></div>
+  </div>
+</section>
+
+<section class="buscar-magalu">
+    <div class="container">
+      <h2>Encontre lojas Magazine Luiza na sua cidade</h2>
+      <p>Digite o nome da sua cidade e veja os endereços das lojas próximas.</p>
+  
+      <form onsubmit="buscarLojas(event)">
+        <input type="text" id="cidade" placeholder="Digite sua cidade" required>
+        <button type="submit">Buscar</button>
+      </form>
+  
+      <div id="resultado-lojas" class="resultado"></div>
+    </div>
+  </section>
+  
+  <section class="buscar-magalu">
+    <div class="container">
+      <h2>Encontre lojas Magazine Luiza na sua cidade</h2>
+      <p>Digite o nome da sua cidade e veja os endereços das lojas próximas.</p>
+
+      <!-- Barra de pesquisa -->
+      <form onsubmit="buscarLojas(event)">
+        <input type="text" id="cidade" placeholder="Digite sua cidade" required>
+        <button type="submit">Buscar</button>
+      </form>
+
+      <!-- Resultado das lojas -->
+      <div id="resultado-lojas" class="resultado"></div>
+    </div>
+  </section>
+
+
+  
+
+  
+  
+  
+  
+
+</body>
+</html>
+
