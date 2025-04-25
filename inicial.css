@@ -1,0 +1,469 @@
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    background-color: #f4f7fc;
+    color: #222;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  header {
+    background: #004aad;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  
+  nav a {
+    color: white;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    color: #cce6ff;
+  }
+  
+  /* HERO COM VÍDEO DE FUNDO */
+  .hero {
+    position: relative;
+    height: 60vh; /* diminuído de 80vh */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+    padding-top: 12vh; /* ajustado para manter o texto visível */
+  }
+  
+  .hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+  }
+  
+  .hero h2,
+  .hero p,
+  .hero .btn {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease forwards;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    animation: fadeInUp 1.2s ease forwards;
+  }
+  
+  
+  .btn {
+    display: inline-block;
+    background: white;
+    color: #004aad;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  .btn:hover {
+    background: #e6f0ff;
+  }
+  
+  section {
+    padding: 4rem 1rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .card {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  }
+  
+  .card img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  .card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .vantagens .grid,
+  .depoimentos .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .vantagens .item,
+  .depoimentos .item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+    animation: zoomIn 1s ease;
+  }
+  
+  .vantagens .item:hover {
+    transform: scale(1.05);
+  }
+  
+  .faq details {
+    background: white;
+    margin-bottom: 1rem;
+    padding: 1.25rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+  }
+  
+  .faq summary {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  
+  .depoimentos {
+    background: #eaf3ff;
+    padding: 4rem 1rem;
+    text-align: center;
+  }
+  
+  footer {
+    background: #00398c;
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    margin-top: 3rem;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+  
+  .whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: background 0.3s ease;
+    z-index: 999;
+  }
+  
+  .whatsapp:hover {
+    background: #1ebe5d;
+  }
+  
+  /* Como Funciona - Nova seção */
+  #como-funciona {
+    padding: 4rem 1rem;
+    text-align: center;
+    background-color: #f4f7fc;
+  }
+  
+  #como-funciona h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    color: #004aad;
+    animation: fadeInUp 1s ease-in-out forwards;
+  }
+  
+  #como-funciona p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .funcionamento {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeInUp 1.5s ease-in-out forwards;
+  }
+  
+  .func-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .func-item img {
+    max-width: 80px;
+    margin-bottom: 1.5rem;
+    animation: bounceIn 1s ease-in-out;
+  }
+  
+  .func-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #004aad;
+  }
+  
+  .func-item p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .func-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Animations */
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.3);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  
+
+
+  #depoimentos {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #f4f7fc;
+  }
+  
+  #depoimentos h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    color: #004aad;
+  }
+  
+  #depoimentos p {
+    font-size: 1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+  }
+  
+  .depoimentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .depoimentos .item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 280px;
+    text-align: center;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .depoimentos .item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .depoimentos .item h4 {
+    margin-top: 0.8rem;
+    font-weight: bold;
+    color: #004aad;
+  }
+  
+  /* Estilo do botão para deixar o elogio */
+  #formulario-depoimento {
+    display: none;
+    margin-top: 2rem;
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #formulario-depoimento h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #004aad;
+  }
+  
+  #formulario-depoimento textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #555;
+    resize: vertical;
+  }
+  
+  #formulario-depoimento button {
+    background: #004aad;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #formulario-depoimento button:hover {
+    background: #006bb3;
+  }
+  
+  /* Botão de exibição do formulário */
+  .btn {
+    display: inline-block;
+    background: #004aad;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 1rem;
+  }
+  
+  .btn:hover {
+    background: #006bb3;
+  }
+  
+  /* Exibindo o formulário */
+  #formulario-depoimento.show {
+    display: block;
+  }
+  

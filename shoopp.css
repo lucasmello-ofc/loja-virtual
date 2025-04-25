@@ -1,0 +1,236 @@
+/* Estilo geral */
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #fb5b5a; /* Cor de fundo do cabeçalho similar à Shopee */
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+header .menu {
+  display: flex;
+  gap: 15px;
+}
+
+header .menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+header .menu a:hover {
+  color: #f1f1f1;
+}
+
+/* Barra de Pesquisa */
+.search-container {
+  margin-left: 30px;
+}
+
+.search-bar {
+  padding: 10px;
+  font-size: 16px;
+  width: 250px;
+  border-radius: 25px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #f1f1f1;
+  outline: none;
+}
+
+/* Letreiro de Promoção */
+.promo-marquee {
+  background-color: #ffcd00; /* Cor da barra de promoções */
+  color: #333;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Banner */
+/* Estilos para o banner */
+.banner {
+  width: 100%;
+  overflow: hidden; /* Esconde o conteúdo fora da área visível */
+  position: relative;
+}
+
+.banner-images {
+  display: flex;
+  animation: slide 10s infinite linear; /* Animação de deslizar */
+}
+
+.banner-images img {
+  width: 100%; /* Faz com que as imagens ocupem toda a largura do banner */
+  flex-shrink: 0; /* Impede que as imagens encolham */
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0); /* Começa no início */
+  }
+  50% {
+    transform: translateX(-50%); /* Move metade da largura (primeira imagem desaparece) */
+  }
+  100% {
+    transform: translateX(-100%); /* Move toda a largura (segunda imagem aparece) */
+  }
+}
+
+
+/* Categorias de Produtos */
+.categories {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.categories h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.category-item {
+  background-color: #ff6f61;
+  padding: 15px 25px;
+  border-radius: 10px;
+  margin: 10px;
+  width: 180px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.category-item a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.category-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category-item:hover a {
+  color: #fff;
+}
+
+/* Produtos */
+.produtos {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.produtos h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.grade-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.produto {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.produto:hover {
+  transform: translateY(-10px);
+}
+
+.produto img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.produto h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.produto .preco {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.produto .btn-comprar {
+  background-color: #ff6f61;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.produto .btn-comprar:hover {
+  background-color: #e65c53;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+  
+  
+  
